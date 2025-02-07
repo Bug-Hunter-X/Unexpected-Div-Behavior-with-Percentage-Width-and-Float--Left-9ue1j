@@ -1,0 +1,13 @@
+To fix this, explicitly set the width of the parent container:
+
+```css
+.parent {
+  width: 100%; /* Or any specific width */
+}
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+By setting the parent's width to 100% (or any other value), the percentage width of the child divs is correctly calculated relative to this defined width, preventing the unexpected collapsing behavior.
